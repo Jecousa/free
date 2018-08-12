@@ -2,26 +2,19 @@
   <div class="row justify-content-center" id="body">
     <div class="col-md-4 menu">
       <div class="btn-group-vertical">
-        <button class="btn btn-primary" routerLink= "/web">
+        <button class="btn btn-primary" routerLink= "/services/web">
           WEB
         </button>
-        <button class="btn btn-primary" routerLink= "/enterprise">
+        <button class="btn btn-primary" routerLink= "/services/enterprise">
           ENTERPRISE
         </button>
-        <button class="btn btn-primary" routerLink= "/marketing">
+        <button class="btn btn-primary" routerLink= "/services/marketing">
           MARKETING
         </button>
       </div>
     </div>
     <div class="col-md-6">
-      <h3 class="text-right">Exponential Potentional</h3>
-      <p class="text-justify">We specialize in creating technological solution to business problems. Our expertise is in enabling entreprenuers,
-        small-business owners and creative professionals to be more efficient, effective, and energized through technology.
-        Whether local or across the globe, 5280Free is committed empowering others with technology.
-        <br>
-        <br> Technologies we work with include web frameworks such as Angular/Ionic, Bootstrap,and Wordpress. Office automation
-        with Visual Basic (VBA) and application programming with Android/Java as well as Python.
-      </p>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
