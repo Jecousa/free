@@ -30,6 +30,11 @@ const routes: Routes = [
       './about/about.module#AboutModule'
   },
   {
+    path: 'blog',
+    loadChildren:
+      './blog/blog.module#BlogModule'
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'
