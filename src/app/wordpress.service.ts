@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+export interface Wp{
+  postUrl: string;
+}
+
+@Injectable()
 export class WordpressService {
+
+  wpUrl= 'https://blog.5280free.com/wp-json/wp/v2/posts?'
 
   constructor(private http: HttpClient) { }
 
-  getPosts() {
-    this.http.get('http://blog.5280free.com/wp-json/wp/v2/posts?_embed')
-    .subscribe(data => {
-      this.heading = data;
-    });
+  getPosts(){
+    return this.http.get(this.wpUrl);
   }
 }

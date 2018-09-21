@@ -1,17 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { WordpressService } from '../../wordpress.service';
+import { Component } from '@angular/core';
+import { WordpressService, Wp } from '../../wordpress.service';
 import { Observable } from 'rxjs';
+import { HttpResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-blog-main',
   templateUrl: './blog-main.component.html',
-  styleUrls: ['./blog-main.component.css']
+  styleUrls: ['./blog-main.component.css'],
+  providers: [WordpressService]
 })
 export class BlogMainComponent  {
+  wp: Wp;
+  headers: string[];
 
-  posts$: Observable<any[]>;
+  constructor(private wordpressService: WordpressService){}
 
-  constructor(private wp: WordpressService){
-    this.posts$ = this.wp.getPosts();
+  showPosts(){
+    this.wordpressService.getPosts()
+    .subscribe((data: Wp) => this.wp = {
+      postUrl: data['postUrl']
+    });
   }
 }
