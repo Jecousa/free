@@ -1,6 +1,7 @@
 <div color="primary">
-  <span>Blog List</span>
+  <button (click)="getPosts()">Get Posts</button>
 </div>
-<div class="page-wrapper">
-{{wp.postUrl}}
+<div *ngFor="let post of posts | async">
+
+<p>{{post.title.rendered}}</p>
   </div>

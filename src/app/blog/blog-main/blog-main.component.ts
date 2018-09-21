@@ -1,24 +1,27 @@
 import { Component } from '@angular/core';
 import { WordpressService, Wp } from '../../wordpress.service';
 import { Observable } from 'rxjs';
-import { HttpResponse } from '@angular/common/http';
+import { HttpResponse, HttpParams, HttpClient } from '@angular/common/http';
+
+export interface Post{
+  id: number;
+}
 
 @Component({
   selector: 'app-blog-main',
   templateUrl: './blog-main.component.html',
   styleUrls: ['./blog-main.component.css'],
-  providers: [WordpressService]
 })
+
 export class BlogMainComponent  {
-  wp: Wp;
-  headers: string[];
+  readonly wpUrl= 'https://blog.5280free.com/wp-json/wp/v2/posts';
 
-  constructor(private wordpressService: WordpressService){}
+  posts: Observable<any>;
 
-  showPosts(){
-    this.wordpressService.getPosts()
-    .subscribe((data: Wp) => this.wp = {
-      postUrl: data['postUrl']
-    });
+  constructor(private http: HttpClient){}
+
+  getPosts(){
+    let params = new HttpParams().set('id', '1');
+    this.posts = this.http.get(this.wpUrl , { params})
   }
 }

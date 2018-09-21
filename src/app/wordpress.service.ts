@@ -15,5 +15,9 @@ export class WordpressService {
 
   getPosts(){
     return this.http.get(this.wpUrl);
+
   }
+
+  
+  
 }
