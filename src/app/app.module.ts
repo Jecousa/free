@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { NgbActiveModal, NgbModal, NgbModule } from '../../node_modules/@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { BorderComponent } from './border/border.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContactModalComponent
+    ContactModalComponent,
+    BorderComponent
   ],
   imports: [
     NgbModule.forRoot(),
