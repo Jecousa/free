@@ -1,8 +1,15 @@
+h1{
+    text-align: right;
+}
 .btn{
     margin-top: 2px;
     border-radius: 6px;
-    padding: 10px;
+    padding: 5px;
     font-size: 38px;
+    display: block;
+    width: fit-content;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 .menu{
     margin-top: 3rem;
@@ -11,5 +18,19 @@
     margin-top: 3rem;
 }
 #questions{
-    padding-top: 3rem;
+    padding-top: 5rem;
+}
+.container-fluid{
+    margin-bottom: 5rem;
+}
+@media only screen and (max-width: 950px) {
+    #heading {
+        display: none;
+    }
+    h1{
+        text-align: center;
+    }
+}
+.jumbotron{
+    padding: 1 rem;
 }
