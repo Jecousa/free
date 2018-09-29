@@ -7,6 +7,9 @@ i{
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
+.card{
+    display: inline-block;
+}
 
 @media only screen and (max-width: 600px) {
     .big {

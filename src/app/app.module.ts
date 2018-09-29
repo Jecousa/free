@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { NgbActiveModal, NgbModal, NgbModule } from '../../node_modules/@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BorderComponent } from './border/border.component';
@@ -17,7 +16,6 @@ import { BorderComponent } from './border/border.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContactModalComponent,
     BorderComponent
   ],
   imports: [

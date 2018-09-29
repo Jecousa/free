@@ -1,5 +1,7 @@
 .container{
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     margin-left: 0px;
     margin-right: 0px;
+    padding-top: 10rem;
+    width: 100%;
 }
