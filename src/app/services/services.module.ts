@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ServicesRoutingModule } from './services-routing.module';
-import { WebComponent } from './web/web.component';
 import { NgbModule } from '../../../node_modules/@ng-bootstrap/ng-bootstrap';
 import { ServiceMainComponent } from './service-main/service-main.component';
-import { EnterpriseComponent } from './enterprise/enterprise.component';
-import { WebDetailComponent } from './web/web-detail/web-detail.component';
+import { ServicesDetailComponent } from './services-detail/services-detail.component';
 
 @NgModule({
   imports: [
@@ -14,6 +12,6 @@ import { WebDetailComponent } from './web/web-detail/web-detail.component';
     CommonModule,
     ServicesRoutingModule
   ],
-  declarations: [WebComponent, ServiceMainComponent, EnterpriseComponent, WebDetailComponent]
+  declarations: [ ServiceMainComponent, ServicesDetailComponent]
 })
 export class ServicesModule { }

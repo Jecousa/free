@@ -15,38 +15,14 @@
       </div>
     </div>
   </div>
-  <div class="body row justify-content-center">
-    <div class=" col-sm-10  text-center">
-      <!-- <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Web Services</h5>
-          <p class="card-text">Full-Stack Development with a Mobile First Design Philosophy</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Enterprise Applications</h5>
-          <p class="card-text">Productivity Scipts or Full Featured Mobile or DesktopApps</p>
-          <a href="#" class="btn btn-primary" (click)="contactModal(content)">Learn More</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Big Data &amp; Infrastructure</h5>
-          <p class="card-text">DevOps Services &amp; Data Driven Insights to Maximize Resources</p>
-          <a href="#" class="btn btn-primary ">Learn More</a>
-        </div>
-      </div>
-    </div> -->
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary">Web</button>
-        <button type="button" class="btn btn-secondary">Enterprise Apps</button>
-        <button type="button" class="btn btn-secondary">Infrastucture &amp; Intelligence</button>
-      </div>
-  </div>
-  </div>
+ 
+  <ul class="freeServices">
+    <li *ngFor="let service of services"
+      [class.selected]="service === selectedServices"
+      (click)="onSelect(service)">
+      <span class="badge">{{service.id}}</span> {{service.name}}
+    </li>
+  </ul>
+  
+  <services-detail [service]="selectedService"></services-detail>
+</div>
