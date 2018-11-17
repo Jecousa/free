@@ -1,14 +1,14 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-sm-auto">
+    <div class="col-sm-auto" id="serviceTitle">
       <h2>Explore the Offerings at 5280Free</h2>
     </div>
   </div>
-  <div class="col-sm-auto">
-    <div class="service-offerings">
+  <div class="col-sm">
+    <div class="service-offerings" id="serviceBody">
       <app-services-detail [service]="selectedService"></app-services-detail>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="serviceNav">
       <div class="btn-group services" role="group" aria-label="Basic example">
         <button *ngFor="let service of services" [class.selected]="service === selectedService" (click)="onSelect(service)"
           type="button" class="btn btn-secondary">{{service.name}}</button>

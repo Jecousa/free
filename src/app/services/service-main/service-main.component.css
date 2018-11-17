@@ -6,6 +6,12 @@ h1{
     height: 15rem;
     border-width: 2px;
 }
+#serviceTitle{
+    padding-bottom: 5px;
+}
+#serviceBody{
+    margin-bottom: 17px;
+}
 .btn{
     margin-top: 2px;
     border-radius: 6px;
