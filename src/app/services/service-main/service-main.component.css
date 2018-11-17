@@ -1,6 +1,11 @@
 h1{
     text-align: right;
 }
+.service-offerings{
+    border-style: solid;
+    height: 15rem;
+    border-width: 2px;
+}
 .btn{
     margin-top: 2px;
     border-radius: 6px;
@@ -24,12 +29,7 @@ h1{
     margin-bottom: 5rem;
 }
 @media only screen and (max-width: 950px) {
-    #heading {
-        display: none;
-    }
-    h1{
-        text-align: center;
-    }
+    
 }
 .jumbotron{
     padding: 1 rem;

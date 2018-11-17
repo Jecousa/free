@@ -1,28 +1,18 @@
-<div class="container-fluid">
+<div class="container">
   <div class="row justify-content-center">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container row">
-        <div id="heading" class="col-sm-4">
-          <img src="" alt="test">
-        </div>
-        <div class="col-sm">
-          <h1 class="display-4 " style="margin-right: 2rem;">Our Process</h1>
-          <p class="lead  text-justify">Technology should be accessible to everyone. At 5280Free we believe in making
-            chosing the technology stack, a group of software and hardware, easy for you. As such, we have
-            simplified the buying process.</p>
-          <p class="lead  text-justify">We specialize in the services provided below. Explore the options below, </p>
-        </div>
+    <div class="col-sm-auto">
+      <h2>Explore the Offerings at 5280Free</h2>
+    </div>
+  </div>
+  <div class="col-sm-auto">
+    <div class="service-offerings">
+      <app-services-detail [service]="selectedService"></app-services-detail>
+    </div>
+    <div class="row justify-content-center">
+      <div class="btn-group services" role="group" aria-label="Basic example">
+        <button *ngFor="let service of services" [class.selected]="service === selectedService" (click)="onSelect(service)"
+          type="button" class="btn btn-secondary">{{service.name}}</button>
       </div>
     </div>
   </div>
- 
-  <ul class="freeServices">
-    <li *ngFor="let service of services"
-      [class.selected]="service === selectedServices"
-      (click)="onSelect(service)">
-      <span class="badge">{{service.id}}</span> {{service.name}}
-    </li>
-  </ul>
-  
-  <services-detail [service]="selectedService"></services-detail>
 </div>

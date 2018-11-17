@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Service } from 'src/app/models/services/service';
 
 @Component({
   selector: 'app-home-main',
@@ -10,6 +11,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomeMainComponent {
 
+  @Input() service: Service;
+  
   closeResult: string;
 
   constructor(private leadService: NgbModal) {}

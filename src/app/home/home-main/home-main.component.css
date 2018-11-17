@@ -13,6 +13,9 @@ i{
 .body{
     margin-top: 3rem;
 }
+.jumbotron{
+    box-shadow: 2px 2px 5px 5px;
+}
 @media only screen and (max-width: 600px) {
     .big {
         display: none;

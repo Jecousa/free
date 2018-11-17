@@ -17,5 +17,6 @@ export class ServiceMainComponent {
   
   onSelect(service: Service): void {
     this.selectedService = service;
+    
   }
 }

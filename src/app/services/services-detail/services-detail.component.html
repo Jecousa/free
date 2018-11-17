@@ -1,3 +1,9 @@
-<p>
-  services-detail works!
-</p>
+<div *ngIf="service; else test"> 
+    <h2>{{service.name}}</h2>
+    <img src={{service.image}} alt="" class="serviceImage">
+    <p class="serviceDescription">{{service.description}}</p>
+</div>
+
+  <ng-template #test>
+      <h2>test initial</h2>
+    </ng-template>
