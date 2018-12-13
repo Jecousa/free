@@ -12,13 +12,11 @@ h1{
 #serviceBody{
     margin-bottom: 17px;
 }
-.btn{
+span.btn{
     margin-top: 2px;
     border-radius: 6px;
-    padding: 5px;
-    font-size: 38px;
-    display: block;
-    width: fit-content;
+    padding: 10px;
+    font-size: 18px;
     margin-right: 2px;
     margin-left: 2px;
 }
@@ -34,9 +32,12 @@ h1{
 .container-fluid{
     margin-bottom: 5rem;
 }
-@media only screen and (max-width: 950px) {
-    
-}
+
 .jumbotron{
     padding: 1 rem;
+}
+@media(max-width: 700px){
+    .btn{
+        width: 100%;
+    }
 }

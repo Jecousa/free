@@ -13,5 +13,6 @@ export class ServicesDetailComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }
