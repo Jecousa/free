@@ -3,8 +3,9 @@ h1{
 }
 .service-offerings{
     border-style: solid;
-    height: 15rem;
+    height: auto;
     border-width: 2px;
+    padding: 2rem;
 }
 #serviceTitle{
     padding-bottom: 5px;

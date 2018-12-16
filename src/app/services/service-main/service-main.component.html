@@ -1,14 +1,9 @@
-
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="" id="serviceTitle">
-      <h2>Explore the Offerings at 5280Free</h2>
-    </div>
-  </div>
-  <div class="">
     <div class="service-offerings" id="serviceBody">
       <app-services-detail [service]="selectedService"></app-services-detail>
     </div>
+  <div class="col-md">
     <div class="row justify-content-center" id="serviceNav">
       <div class="services" role="group" id="web">
         <span class="btn btn-primary" *ngFor="let service of services" [class.selected]="service === selectedService"
@@ -16,4 +11,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
