@@ -3,13 +3,11 @@
     <div class="service-offerings" id="serviceBody">
       <app-services-detail [service]="selectedService"></app-services-detail>
     </div>
-  <div class="col-md">
     <div class="row justify-content-center" id="serviceNav">
       <div class="services" role="group" id="web">
         <span class="btn btn-primary" *ngFor="let service of services" [class.selected]="service === selectedService"
           (click)="onSelect(service)">{{service.name}}</span>
       </div>
     </div>
-  </div>
 </div>
 </div>

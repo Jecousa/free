@@ -1,39 +1,58 @@
 <div class="col-md justify-content-center">
-<div class="row justify-content-center" *ngIf="service; else test">
+  <div class="row justify-content-center" *ngIf="service; else test">
     <h2>{{service.name}}</h2>
-</div>
+
     <div class="row justify-content-center">
-        <img src={{service.image}} alt="" class="serviceImage">
-        <p style="font-size:3.5vw;" class="serviceDescription">{{service.description}}</p>
+      <img src={{service.image}} alt="" class="serviceImage">
+      <p style="font-size:2.5vw;" class="serviceDescription">{{service.description}}</p>
     </div>
     <div class="row justify-content-center">
-        <button class="btn-primary" (click)="contactModal(content)">{{service.buttonText}}</button>
+      <button class="btn-primary" (click)='contactModal(web)'>{{service.buttonText}}</button>
     </div>
+  </div>
 </div>
 
 <ng-template #test>
+  <div class="row justify-content-center">
     <h2 class="" style="font-size: 3.5vw;">Select one of the Services Below to Learn More</h2>
+  </div>
 </ng-template>
 
 <!--web modal-->
-<ng-template #content let-c="close" let-d="dismiss">
-        <div class="modal-header">
-          <h4 class="modal-title">Contact 5280Free</h4>
-          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-3">Phone
-              </div>
-              <div class="col-md-3">Email
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
-        </div>
-      </ng-template>
+<ng-template #web let-c="close" let-d="dismiss">
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+        <ngb-panel title="web">
+          <ng-template ngbPanelContent>
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+            aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+            craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+            labore sustainable VHS.
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel title="apps">
+            <ng-template ngbPanelContent>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="auto">
+              <ng-template ngbPanelContent>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                labore sustainable VHS.
+              </ng-template>
+            </ngb-panel>
+      </ngb-accordion>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>

@@ -8,15 +8,14 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal.module';
   styleUrls: ['./services-detail.component.css']
 })
 export class ServicesDetailComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
-  }
+  ngOnInit(): void {}
+
   @Input() service: Service;
 
   constructor(private modalService: NgbModal) {}
 
-  contactModal(content) {
-    this.modalService.open(content, {backdropClass: 'light-blue-backdrop'});
+  contactModal(web) {
+    this.modalService.open(web, {backdropClass: 'light-blue-backdrop'});
   }
 
 }
