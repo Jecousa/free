@@ -25,6 +25,11 @@ const routes: Routes = [
       './contact/contact.module#ContactModule'
   },
   {
+    path: 'order',
+    loadChildren:
+      './order/order.module#OrderModule'
+  },
+  {
     path: 'about',
     loadChildren:
       './about/about.module#AboutModule'

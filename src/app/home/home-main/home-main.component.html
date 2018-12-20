@@ -3,58 +3,60 @@
         crossorigin="anonymous">
 </head>
 <div class="container-fluid">
-<div class="row justify-content-center">
-    <div class="jumbotron text-center">
-        <h1 class="display-4">What Does the Future Look-Like?</h1>
-        <p class="lead">Technology is rapidly revolutionizing the world we live in, we help you keep up with the change</p>
-        <hr class="my-4">
-        <p>5280Free is Your Partner for the Future, serving all client's needs from passion projects to international
-            business.
-            We focus on technology so you can focus on what makes you amazing!
-        </p>
-        <br>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" (click)="leadModal(content)" role="button">How Can We Help?</a>
-        </p>
-    </div>
-    <!--Make Responsive @360 px-->
-    <div class="body row justify-content-center">
-        <div class=" col-sm-10  text-center">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Services</h5>
-                        <p class="card-text">Full-Stack Development with a Mobile First Design Philosophy</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+    <div class="row justify-content-center">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">What Does the Future Look-Like?</h1>
+            <p class="lead">Technology is rapidly revolutionizing the world we live in, we help you keep up with the
+                change</p>
+            <hr class="my-4">
+            <p>5280Free is Your Partner for the Future, serving all client's needs from passion projects to
+                international
+                business.
+                We focus on technology so you can focus on what makes you amazing!
+            </p>
+            <br>
+            <p class="lead">
+                <span class="btn btn-primary btn-lg" (click)="leadModal(content)">How Can We Help?</span>
+            </p>
+        </div>
+        <!--Make Responsive @360 px-->
+        <div class="body row justify-content-center">
+            <div class=" col-sm-10  text-center">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Services</h5>
+                            <p class="card-text">Full-Stack Development with a Mobile First Design Philosophy</p>
+                            <button (click)='leadModal(serviceMain)' class="btn btn-primary align-bottom">Learn More</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Applications</h5>
-                        <p class="card-text">Productivity Scripts or Full Featured Mobile or DesktopApps</p>
-                        <a href="#" class="btn btn-primary" (click)="contactModal(content)">Learn More</a>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Enterprise Applications</h5>
+                            <p class="card-text">Productivity Scripts or Full Featured Mobile or DesktopApps</p>
+                            <button (click)='leadModal(serviceMain)' class="btn btn-primary align-bottom">Learn More</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">DevOps Automation</h5>
-                        <p class="card-text">DevOps Services &amp; Data Driven Insights to Maximize Resources</p>
-                        <a href="#" class="btn btn-primary align-bottom">Learn More</a>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">DevOps Automation</h5>
+                            <p class="card-text">DevOps Services &amp; Data Driven Insights to Maximize Resources</p>
+                            <button (click)='leadModal(serviceMain)' class="btn btn-primary align-bottom">Learn More</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="justify-content-center text-center" id="tech">
-            <h2 class="text-center">Technologies We Use</h2>
-            <i class="fab fa-angular"></i>
-            <i class="fab fa-aws"></i>
-            <i class="fab fa-wordpress big"></i>
-            <i class="fab fa-docker big"></i>
-            <i class="fab fa-python"></i>
-            <i class="fab fa-java big"></i>
+            <div class="justify-content-center text-center" id="tech">
+                <h2 class="text-center">Technologies We Use</h2>
+                <i class="fab fa-angular"></i>
+                <i class="fab fa-aws"></i>
+                <i class="fab fa-wordpress big"></i>
+                <i class="fab fa-docker big"></i>
+                <i class="fab fa-python"></i>
+                <i class="fab fa-java big"></i>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <!--Main Modal-->
 <ng-template #content let-c="close" let-d="dismiss">
@@ -89,6 +91,88 @@
             </div>
         </div>
     </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    </div>
+</ng-template>
+<!--Serivce Modal-->
+<ng-template #serviceMain id="services" let-c="close" let-d="dismiss">
+    <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="static-1">
+        <ngb-panel title="Web Services">
+            <ng-template ngbPanelContent>
+                <h3>Web Serivces</h3>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <p>Mobile-responsive, platform agnostic web services.
+                            Engage and connect with your online audience, carve
+                            out your piece of online real estate. Make your mark
+                            on the internet.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Static Websites and Landing Pages</li>
+                            <li>WordPress Blogs</li>
+                            <li>Social Media Strategy and Integration</li>
+                            <li>Search Engine Optomization (SEO)</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <span class="btn btn-primary" style="margin:auto; display:block;">Get A Free Estimate</span>
+
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Apps &amp; Tools">
+            <ng-template ngbPanelContent>
+                <h3>Tools &amp; Apps</h3>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <p>Sophisticated, complex, powerful applications and tools.
+                            Increase productivity or create a product with tools and applications
+                            tailored specifically to your needs. Full-stack expertise!
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Web Applications</li>
+                            <li>Desktop Applications</li>
+                            <li>Android Native Apps</li>
+                            <li>Productivity Tools</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <span class="btn btn-primary" style="margin:auto; display:block;">Get A Free Estimate</span>
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="DevOps Cloud Automation">
+            <ng-template ngbPanelContent>
+                <h3>DevOps Cloud Automation</h3>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <p>Bring your ideas from the drawing board to development to operations
+                            seemlessly. Automated cloud-based DevOps solutions at every stage of production,
+                            usings cutting edge technology and tools.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>End to End Build Automation</li>
+                            <li>AWS Integration</li>
+                            <li>Virtual Cloud Computing Infrastructure</li>
+                            <li>Seemless Integration and Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <span class="btn btn-primary" style="margin:auto; display:block;">Get A Free Estimate</span>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
     <div class="modal-footer">
         <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
     </div>

@@ -9,16 +9,18 @@ import { Service } from 'src/app/models/services/service';
   encapsulation: ViewEncapsulation.None
   
 })
-export class HomeMainComponent {
-
+export class HomeMainComponent implements OnInit{
+  ngOnInit(): void{}
   @Input() service: Service;
   
   closeResult: string;
 
   constructor(private leadService: NgbModal) {}
 
-  leadModal(content) {
+  leadModal(content, serviceMain) {
     this.leadService.open(content, {backdropClass: 'light-blue-backdrop'});
+    this.leadService.open(serviceMain, {backdropClass: 'light-blue-backdrop'});
+
   }
 
 }
