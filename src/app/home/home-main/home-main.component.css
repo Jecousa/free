@@ -1,23 +1,4 @@
-i{
-    color: black;
-    font-size: 5rem;
-    padding: 1rem;
-}
-#tech{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
-.card{
-    display: inline-block;
-}
-.body{
-    margin-top: 3rem;
-}
-.jumbotron{
-    box-shadow: 2px 2px 5px 5px;
-}
-@media only screen and (max-width: 600px) {
-    .big {
-        display: none;
-    }
+.home{
+    height: auto;
+    margin-bottom: 10px;
 }

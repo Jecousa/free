@@ -4,6 +4,7 @@ import { NgbModule } from '../../../node_modules/@ng-bootstrap/ng-bootstrap';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeMainComponent } from './home-main/home-main.component';
+import { HomeDetailComponent } from './home-detail/home-detail.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,6 @@ import { HomeMainComponent } from './home-main/home-main.component';
     CommonModule,
     HomeRoutingModule
   ],
-  declarations: [HomeMainComponent]
+  declarations: [HomeMainComponent, HomeDetailComponent]
 })
 export class HomeModule { }

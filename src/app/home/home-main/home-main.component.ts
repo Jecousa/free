@@ -5,22 +5,10 @@ import { Service } from 'src/app/models/services/service';
 @Component({
   selector: 'app-home-main',
   templateUrl: './home-main.component.html',
-  styleUrls: ['./home-main.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./home-main.component.css']
   
 })
 export class HomeMainComponent implements OnInit{
   ngOnInit(): void{}
-  @Input() service: Service;
-  
-  closeResult: string;
-
-  constructor(private leadService: NgbModal) {}
-
-  leadModal(content, serviceMain) {
-    this.leadService.open(content, {backdropClass: 'light-blue-backdrop'});
-    this.leadService.open(serviceMain, {backdropClass: 'light-blue-backdrop'});
-
-  }
 
 }
