@@ -9,7 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NgbActiveModal, NgbModal, NgbModule } from '../../node_modules/@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BorderComponent } from './border/border.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     AngularFontAwesomeModule,
     HttpClientModule, 
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
