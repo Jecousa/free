@@ -8,98 +8,20 @@
       </div>
     </div>
   </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-md" id="order-form">
         <form [formGroup]="form" (ngSubmit)="onSubmitOrder()">
             <div *ngFor="let question of questions" class="form-row">
                 <app-order-questions [question]="question" [form]="form"></app-order-questions>
               </div>
-
-                <!--original -->
-
-          <!--Contact Info-->
-          <!-- <div class="input-group mb-3 input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Name</span>
-            </div>
-            <input type="text" class="form-control" formControlName="orderName">
-          </div>
-          <div class="input-group mb-3 input-group-sm">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Business (Optional)</span>
-            </div>
-            <input type="text" class="form-control" formControlName="orderBus">
-          </div>
-          <div class="input-group mb-3 input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text">E-mail</span>
-            </div>
-            <input type="text" class="form-control" formControlName="orderEmail">
-          </div>
-          <div class="input-group mb-3 input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Phone</span>
-            </div>
-            <input type="text" class="form-control" formControlName="orderPhone">
-          </div> -->
-
-          <!--Project Details-->
-          <!-- <select name="project-type" class="custom-select">
-            <option selected>Desired Project Outcome</option>
-            <option value="webOrder">Establish a Web Presence</option>
-            <option value="appOrder">Develop Engineered Software</option>
-            <option value="toolOrder">Create Tools and Processes</option>
-            <option value="infraOrder">Implement and Configure Infrastructure</option>
-            <option value="otherOrder">Other</option>
-          </select>
-          <form [formGroup]="timeForm">
-          <select name="start-date" class="custom-select" id="orderStart" formControlName="orderStart">
-            <option *ngFor="let t of times" [ngValue]='t'>{{t}}</option>
-          </select>
-        </form>
-          <select name="complete-date" class="custom-select" formControlName="orderFinish">
-            <option selected>Estimated Completion Time</option>
-            <option value="weekFinishOrder">Less Than 1 Week</option>
-            <option value="monthFinishOrder">2 to 4 Weeks</option>
-            <option value="quarterFinishOrder">Within 3 Months</option>
-            <option value="yearFinishOrder">Greater Than 3 Months</option>
-            <option value="unknownFinishOrder">Unknown Start Time</option>
-          </select> -->
-          <!--Details-->
-          <!-- <h4 class="text-center">Who is this Project for?</h4>
-          <div class="input-group mb-3">
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="personOrder" name="personal" value="personal" formControlName="orderPersonal"> 
-              <label class="custom-control-label" for="personOrder">Personal</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="businessOrder" name="business" value="business" formControlName="orderBusiness">
-              <label class="custom-control-label" for="businessOrder">Business</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="orgOrder" name="org" value="org" formControlName="orderOrg">
-              <label class="custom-control-label" for="orgOrder">Charity, Non Profit, other Organizations</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="contractOrder" name="contract" value="contract" formControlName="orderContract">
-              <label class="custom-control-label" for="contractOrder">Contract</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" class="custom-control-input" id="otherOrder" name="other" value="other" formControlName="orderOther">
-              <label class="custom-control-label" for="otherOrder">Other</label>
-            </div>
-          </div>
-          <label for="commentOrder">Please Provide Additional Details:</label>
-          <textarea class="form-control" rows="5" id="commentOrder"></textarea>
-          <button type="submit" class="btn btn-primary">Submit</button> --> 
-        
-        </form>
-
+        <div class="form-row">
+          <button type="submit" [disabled]="!form.valid">Save</button>
+        </div>
+      </form>
         <div *ngIf="payLoad" class="form-row">
             <strong>Saved the following values</strong><br>{{payLoad}}
-          </div>
-          
+          </div>    
       </div>
     </div>
   </div>
-</div>
+
