@@ -1,9 +1,9 @@
 .serviceImage{
-    height: 25vw;
-    width: 20vw;
-    margin: 2rem;
+    height: 8rem;
+    width: 10rem;
+   margin-top: 2rem;
 }
 .serviceDescription{
-    margin: 2rem;
-    padding-top: 5vh;
+    margin: 1rem;
+    padding-top: 1rem;
 }

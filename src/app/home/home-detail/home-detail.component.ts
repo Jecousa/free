@@ -16,9 +16,9 @@ export class HomeDetailComponent implements OnInit {
 
   constructor(private leadService: NgbModal) {}
 
-  leadModal(content, serviceMain) {
-    this.leadService.open(content, {backdropClass: 'light-blue-backdrop'});
-    this.leadService.open(serviceMain, {backdropClass: 'light-blue-backdrop'});
+  leadModal(content) {
+    this.leadService.open(content, {backdropClass: 'light-blue-backdrop', centered:true, size:"lg"});
+
 
   }
 

@@ -11,3 +11,20 @@
 .container{
     margin-bottom: 5rem;
 }
+#close{
+    margin-bottom: 5vh;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+.card-text{
+    font-size: 1rem;
+}
+.card-header{
+    font-size: 2rem;
+}
+@media  (max-width: 1400px) {
+    .card {
+        width: 100%;
+    }
+}

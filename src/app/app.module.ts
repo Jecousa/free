@@ -10,6 +10,7 @@ import { NgbActiveModal, NgbModal, NgbModule } from '../../node_modules/@ng-boot
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BorderComponent } from './border/border.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact/contact-form-component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BorderComponent
+    BorderComponent,
+    ContactFormComponent
   ],
   imports: [
     NgbModule.forRoot(),

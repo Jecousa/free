@@ -3,8 +3,8 @@
   <div class="row justify-content-center">
     <div class="col-md">
       <div class="jumbotron">
-        <h2 class="text-center">Free Estimate With 30 Minute Consulatation</h2>
-        <p class="text-center">Answer a few questions, we will contact you in 72 hours</p>
+        <h2 class="text-center">Free Estimate With 30 Minute Consultation</h2>
+        <p class="text-center">Fill out the form below, we will contact you in 72 business-hours</p>
       </div>
     </div>
   </div>
@@ -15,12 +15,9 @@
                 <app-order-questions [question]="question" [form]="form"></app-order-questions>
               </div>
         <div class="form-row">
-          <button type="submit" [disabled]="!form.valid">Save</button>
+          <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
         </div>
       </form>
-        <div *ngIf="payLoad" class="form-row">
-            <strong>Saved the following values</strong><br>{{payLoad}}
-          </div>    
       </div>
     </div>
   </div>

@@ -1,11 +1,11 @@
 <div class="container-fluid">
-  <div class="row justify-content-center">
+  <div class="row justify-content-center" style="margin-top:3rem;">
     <div class="service-offerings" id="serviceBody">
       <app-services-detail [service]="selectedService"></app-services-detail>
     </div>
     <div class="row justify-content-center" id="serviceNav">
       <div class="services" role="group" id="web">
-        <span class="btn btn-primary" *ngFor="let service of services" [class.selected]="service === selectedService"
+        <span style="font-size:3rem;"class="btn btn-primary" *ngFor="let service of services" [class.selected]="service === selectedService"
           (click)="onSelect(service)">{{service.name}}</span>
       </div>
     </div>

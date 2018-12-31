@@ -31,3 +31,6 @@
 .nounderline {
   text-decoration: none !important
 }
+a{
+  font-size: 1.8rem;
+}

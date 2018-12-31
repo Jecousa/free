@@ -37,7 +37,7 @@ span.btn{
 .jumbotron{
     padding: 1 rem;
 }
-@media(max-width: 700px){
+@media(max-width: 1450px){
     .btn{
         width: 100%;
     }

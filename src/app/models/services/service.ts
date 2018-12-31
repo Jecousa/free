@@ -1,4 +1,4 @@
-import { Offering } from "src/app/offerings/offering";
+
 
 export class Service {
     id: number;

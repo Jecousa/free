@@ -15,7 +15,7 @@ export class ServicesDetailComponent implements OnInit {
   constructor(private modalService: NgbModal) {}
 
   contactModal(web) {
-    this.modalService.open(web, {backdropClass: 'light-blue-backdrop'});
+    this.modalService.open(web, {backdropClass: 'light-blue-backdrop', centered:true, size:"lg"});
   }
 
 }
