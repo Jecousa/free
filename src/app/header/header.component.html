@@ -1,65 +1,63 @@
 <nav class="navbar navbar-dark bg-dark mb-2 fixed-top" id="header">
-    <div class="col-md-12 mx-auto flex-column text-center">
-      <a routerLink="/home" >
-        <h3 class="nounderline masthead-brand">5280Free</h3>
-      </a>
-    </div>
-    <div class=" mx-auto flex-column text-center">
-    <div class="navbar-expand mr-auto">
-      <div class="navbar-nav">
-        <a class="nav-link" href="#" routerLink="/about" routerLinkActive="active">About</a>
-        <a class="nav-link" href="#" routerLink="/services" routerLinkActive="active">Services</a>
-        <a class="nav-link" href="#" routerLink="/blog" routerLinkActive="active">Blog</a>
-        <a class="nav-link" (click)="contactModal(content)" routerLinkActive="active">Contact</a>
-      </div>
-    </div>
-  </div>
-  </nav>
-  
-  <ng-template #content let-c="close" let-d="dismiss" id="modal">
-        <div class="modal-header">
-            <h4 class="modal-title text-center">What Can We Do For You?</h4>
-            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <div class="container-fluid">
-                <div class="row">
-    
-                </div>
-                <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
-                    <div class="form-group">
-                        <label for="lead">What's Up?</label>
-                        <select class="form-control" id="contactRequest" required>
-                            <option *ngFor="let opt of contacts" [value]="opt">{{opt}}</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="contactName">Name:</label>
-                        <input type="text" class="form-control" id="contactName"
-                        required
-                        [(ngModel)]="model.contactName" name="contactName">
-                        <label for="contactPhone">Phone:</label>
-                        <input type="text" class="form-control" id="contactPhone"
-                        required
-                        [(ngModel)]="model.contactPhone" name="contactPhone">
-                        <label for="contactWmail">Email:</label>
-                        <input type="text" class="form-control" id="contactEmail"
-                        required
-                        [(ngModel)]="model.contactEmail" name="contactEmail">
-                        <label for="contactComment">Comment:</label>
-                        <textarea class="form-control" rows="5" id="contactComment"></textarea>           
-                    </div>
-                    
-                <button type="submit" class="btn btn-success">Submit</button>
+    <div class="col-md-12 mx-auto flex-column ">
 
-                </form>
+        <div class="navbar-expand mr-auto">
+            <div class="navbar-nav">
+                <a routerLink="/home">
+                    <h3 class="masthead-brand">5280Free</h3>
+                </a>
+                <a class="nav-link" href="#" routerLink="/about" routerLinkActive="active">About</a>
+                <a class="nav-link" href="#" routerLink="/services" routerLinkActive="active">Services</a>
+                <a class="nav-link" href="#" routerLink="/blog" routerLinkActive="active">Blog</a>
+                <a class="nav-link" (click)="contactModal(content)" routerLinkActive="active">Contact</a>
             </div>
         </div>
-        <div class="modal-footer">    
-            <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
-    
+    </div>
+</nav>
+
+<ng-template #content let-c="close" let-d="dismiss" id="modal">
+    <div class="modal-header">
+        <h4 class="modal-title text-center">What Can We Do For You?</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <i class="fas fa-phone">&nbsp;(720) 432-6705</i>
+                <i class="fas fa-envelope-square">&nbsp;Jake@5280free.com</i>
+
+            </div>
+            <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="lead">What's Up?</label>
+                    <select class="form-control" id="contactRequest" required>
+                        <option *ngFor="let opt of contacts" [value]="opt">{{opt}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contactName">Name:</label>
+                    <input type="text" class="form-control" id="contactName" required [(ngModel)]="model.contactName"
+                        name="contactName">
+                    <label for="contactPhone">Phone:</label>
+                    <input type="text" class="form-control" id="contactPhone" required [(ngModel)]="model.contactPhone"
+                        name="contactPhone">
+                    <label for="contactWmail">Email:</label>
+                    <input type="text" class="form-control" id="contactEmail" required [(ngModel)]="model.contactEmail"
+                        name="contactEmail">
+                    <label for="contactComment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="contactComment"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+
+            </form>
         </div>
-         {{model.contactName}}
-    </ng-template>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+
+    </div>
+    {{model.contactName}}
+</ng-template>

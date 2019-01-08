@@ -14,19 +14,14 @@ i{
     margin-top: 3rem;
 }
 .jumbotron{
-    box-shadow: 2px 2px 5px 5px;
+    box-shadow: .1rem .2rem .5rem .5rem;
+    width: 80%;
 }
 @media only screen and (max-width: 600px) {
     .big {
         display: none;
     }
 }
-.card-title{
-    font-size: 2.5rem;
-}
-.card-text{
-    font-size: 1.5rem;
-}
-.btn{
-    font-size: 3rem;
-}
+    .col-md{
+        margin-top:2.5rem;
+    }

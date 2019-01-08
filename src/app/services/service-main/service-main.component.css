@@ -12,12 +12,12 @@ h1{
 }
 #serviceBody{
     margin-bottom: 17px;
+    width: 85%;
 }
 span.btn{
     margin-top: 2px;
     border-radius: 6px;
-    padding: 10px;
-    font-size: 18px;
+    padding: 5px;
     margin-right: 2px;
     margin-left: 2px;
 }
@@ -37,8 +37,10 @@ span.btn{
 .jumbotron{
     padding: 1 rem;
 }
-@media(max-width: 1450px){
+@media(max-width: 1000px){
     .btn{
-        width: 100%;
+        text-align: center;
+        width: 60%;
+        padding: 2px;
     }
 }
