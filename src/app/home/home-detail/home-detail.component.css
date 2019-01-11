@@ -4,8 +4,8 @@ i{
     padding: 1rem;
 }
 #tech{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 .card{
     display: inline-block;
@@ -21,7 +21,26 @@ i{
     .big {
         display: none;
     }
+    .lead{
+        width: 90%;
+    }
 }
     .col-md{
         margin-top:2.5rem;
+    }
+    .lead{
+        width: auto;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .heading{
+        vertical-align: middle;
+        height: 15rem;
+        padding: 5px;
+        width: 100%;
+        color:yellow;
+        text-shadow: 1px 1px 2px white;
+       background-size: cover;
+        background-image: url("../../../assets/architecture-buildings-business-1455964.jpg");
+        
     }

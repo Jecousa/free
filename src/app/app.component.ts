@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal.module';
+
 
 @Component({
   selector: 'app-root',
