@@ -1,4 +1,4 @@
-i{
+ i{
     color: black;
     font-size: 5rem;
     padding: 1rem;
@@ -13,9 +13,17 @@ i{
 .body{
     margin-top: 3rem;
 }
-.jumbotron{
-    box-shadow: .1rem .2rem .5rem .5rem;
-    width: 80%;
+.heading>h1{
+    font-size: 6rem;
+    margin-top: 3rem;
+}
+@media only screen and (max-width: 1550px) {
+    .heading>h1{
+        font-size: 4em;
+    }
+    .offer{
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 600px) {
     .big {
@@ -24,9 +32,30 @@ i{
     .lead{
         width: 90%;
     }
+    .heading>h1{
+        font-size: 3rem;
+    }
 }
-    .col-md{
-        margin-top:2.5rem;
+.serButton{
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: .1rem #666666 solid;
+    background-color: rgb(49, 43, 43);
+}
+    .offer{
+        margin:1.5rem .75rem .25rem;
+        border: 3px black solid;
+        border-radius: 10px;
+        padding: 1rem;
+        background-color: rgb(118, 125, 160);
+        box-shadow: .25rem .25rem .25rem #666666;
+    }
+    .offer>h5{
+        font-size: 3rem;       
+    }
+    .offer>p{
+        font-size: 1.5rem;
     }
     .lead{
         width: auto;
@@ -35,12 +64,19 @@ i{
     }
     .heading{
         vertical-align: middle;
-        height: 15rem;
-        padding: 5px;
+        height: 20rem;
+        padding: 4rem 1rem 1rem;
         width: 100%;
-        color:yellow;
-        text-shadow: 1px 1px 2px white;
+        color:rgba(255, 238, 0, 0.986);
+        text-shadow: 2px 2px 6px rgb(223, 219, 219);
        background-size: cover;
         background-image: url("../../../assets/architecture-buildings-business-1455964.jpg");
         
+    }
+    #consult{
+        padding: 2rem 1rem 1rem;
+        font-size: 3rem;
+        border-radius: 5rem;
+        background-color: #5a69ac;
+        box-shadow: .5rem .5rem 1rem #666666;
     }
