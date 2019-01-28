@@ -25,6 +25,6 @@ export const SERVICES: Service[] = [
     user1: 'Software Engineering Firms', user2:'Web Developers', user3:'Technology Specialists',
     detail1:'Firms that develop applications, needing a platform', detail2:'Devlopers needing to quickly scale network capabilities', detail3:'Specialists needing a wide-range of cloud-based computing services'
     tech1:'AWS', tech2:'Jenkins'tech3:'Git'
-    techpic1:'test', techpic2:'', techpic3:''}
+    techpic1:'test', techpic2:'test', techpic3:'test'}
 
 ];
