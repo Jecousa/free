@@ -1,19 +1,36 @@
-<div class="col-md "*ngIf="service; else test">
-    <div class="row justify-content-center" >
+<div class="col-md " *ngIf="service; else test">
+    <div class="row justify-content-center">
         <h2 style="font-size: 2rem;">{{service.name}}</h2>
     </div>
-        <div class="row justify-content-center" style="margin-bottom:2rem;">
-            <div class="col-md-4">
-                <img src={{service.image}} alt="" class="serviceImage">
-            </div>
-            <div class="col-md-6">
-                <p style="font-size:1.5rem" class="serviceDescription">{{service.description}}</p>
-            </div>
+    <div class="row justify-content-center" style="margin-bottom:2rem;">
+        <div class="col-md-4">
+            <img src={{service.image}} alt="" class="serviceImage">
         </div>
-        <div class="row justify-content-center">
-            <button style="font-size:2rem" class="btn-primary" (click)='contactModal(web)'>{{service.buttonText}}</button>
+        <div class="col-md-6">
+            <p style="font-size:1.5rem" class="serviceDescription">{{service.description}}</p>
         </div>
     </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <p class="text-center">
+                Who Uses These Services?
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul>
+                    <li>{{service.user1}}</li>
+                    <li>{{service.user2}}</li>
+                    <li>{{service.user3}}</li>
+                </ul>
+            </div>
+        </div>
+    <div class="row justify-content-center">
+        <h3>Technologies Used:</h3>
+        <p>{{service.tech}}</p>
+    </div>
+</div>
 
 
 <!--Default Value-->
@@ -48,7 +65,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
 
             </ng-template>
         </ngb-panel>
@@ -73,7 +91,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
             </ng-template>
         </ngb-panel>
         <ngb-panel title="DevOps Cloud Automation">
@@ -97,7 +116,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
             </ng-template>
         </ngb-panel>
     </ngb-accordion>
@@ -131,7 +151,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
 
             </ng-template>
         </ngb-panel>
@@ -156,7 +177,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
             </ng-template>
         </ngb-panel>
         <ngb-panel title="DevOps Cloud Automation">
@@ -180,7 +202,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
             </ng-template>
         </ngb-panel>
     </ngb-accordion>
@@ -214,7 +237,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
 
             </ng-template>
         </ngb-panel>
@@ -239,7 +263,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
             </ng-template>
         </ngb-panel>
         <ngb-panel title="DevOps Cloud Automation">
@@ -263,7 +288,8 @@
                     </div>
                 </div>
                 <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get A Free Estimate</span>
+                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
+                    A Free Estimate</span>
             </ng-template>
         </ngb-panel>
     </ngb-accordion>
