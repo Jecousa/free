@@ -1,3 +1,4 @@
+
 .about{
     margin-top: 1.8rem;
 }
@@ -29,10 +30,31 @@
 .card-header{
     font-size: 2rem;
 }
-@media  (max-width: 1400px) {
-    .card {
+.card{
+    margin-right: 1.5rem;
+}
+@media  only screen and (max-width: 1160px) {
+    .card-group {
+        display: inline-block;
+        width: 100%;
+        margin-right: 0;
+    }
+    #body{
+        margin-bottom: 1rem;
+    }
+    .about{
+        align-content: center;
+        margin-top: 1.8rem;
+        display: inline-block;
         width: 100%;
     }
+    .photo{
+        
+        align-content: center;
+        display: inline-block;
+        width: 100%;
+    }
+
 }
 .card-group{
     padding: 2rem;
@@ -41,16 +63,25 @@
     font-size: 6rem;
     margin-top: 3rem;
 }
+.outro{
+    font-size: 2.5rem;
+}
 @media only screen and (max-width: 1550px) {
     .heading>h1{
         font-size: 4em;
+    }
+    .outro{
+        font-size: 1.75rem;
     }
 
 }
 @media only screen and (max-width: 600px) {
 
     .heading>h1{
-        font-size: 3rem;
+        font-size: 2.7rem;
+    }
+    .outro{
+        font-size: 1.2rem;
     }
 }
 .heading{
@@ -60,19 +91,30 @@
     width: 100%;
     color:rgba(255, 238, 0, 0.986);
     text-shadow: 2px 2px 6px rgb(223, 219, 219);
-   background-size: cover;
+   background-size: 100%;
     background: url(../../../assets/aboutBack.jpg);
+    background-repeat: no-repeat;
 
 }
-.heading>h1{
-    font-size: 4rem;
-}
+
 img{
-    margin-top: 1rem;
+    margin-top: 6rem;
     height: 25rem;
 }
 #portfolio{
+    margin-top: 3.5rem;
     background-color: lightgray;
-    box-shadow: 2 3 2  black;
+    box-shadow: 0 0 5px  black, 0 0 3px  black;
     padding: 2rem;
+}
+a{
+    text-decoration: none;
+}
+hr.divide{
+    border:.7px solid;
+    width: 90%;
+    box-shadow: 2px 2px 3px;
+}
+i{
+    font-size: 3.5rem;
 }

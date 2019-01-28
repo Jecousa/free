@@ -3,42 +3,43 @@
         crossorigin="anonymous">
 </head>
 <div class="heading text-center col-lg" >
-      <h1 class="align-middle" style="font-size:4rem;">Colorado-Based Technology Firm</h1>  
+      <h1 class="align-middle" >Colorado-Based Technology Firm</h1>  
   </div>
   <div class="container-fluid">
 <div class="row justify-content-center" id="body">
-  <div class="col-md-4 photo">
+  <div class="col-lg-4 photo">
     <img class="img-fluid" src="../../assets/aboutIntro.jpg" alt="">
     <p><strong>American-Made in Denver, Colorado</strong></p>
   </div>
-  <div class="col-md-6 about">
+  <div class="col-lg-6 about">
     <h3 class="text-right"style="padding-right: 5rem; font-size: 2.8rem;">Exponential Potentional</h3>
-    <p class="text-justify" style="font-size: 1.2rem;">Technology has the power to drive industry, catalyze innovation and transform lives.
+    <p class="text-justify" style="font-size: 1.7rem;">Technology has the power to drive industry, catalyze innovation and transform lives.
       We specialize in making technology accessible to anyone with an idea, passion and vision. Take the guess-work out of technology, focus
       on what drives you to do your best. 
       <br>
       <br>We offer a variety of technological services for anyone from small business, entrepreneuers to large enterprise organizations, as well
-      as craftsmen, artists, and charities. Services include websites, applications and tooling, as well as could-based DevOps automation.  <button>Request an Estimate</button> or <button>Contact Us</button>
+      as craftsmen, artists, and charities. Services include websites, applications and tooling, as well as could-based DevOps automation.  <button routerLink="/order" style="font-size:1.5rem;border-radius: 1rem;margin-top:1rem;">Request an Estimate</button>
       
       
     </p>
   </div>
 </div>
+<hr class="divide">
 <div class="row justify-content-center" id="body">
-  <div class="col-md-4 photo">
+  <div class="col-lg-4 photo">
     <img class="img-fluid" src="../../assets/chipset.jpg" alt="">
-    <p><strong>American-Made in Denver, Colorado</strong></p>
+    <p><strong>Navigating the technological Frontier</strong></p>
   </div>
-  <div class="col-md-6 about">
+  <div class="col-lg-6 about">
     <h3 class="text-right" style="padding-right: 5rem; font-size: 2.8rem;">Passionate About Tech</h3>
-    <p class="text-justify" style="font-size: 1.2rem;">5280Free is a Denver-based small technology firm, founded and operated by 
+    <p class="text-justify" style="font-size: 1.7rem;">5280Free is a Denver-based small technology firm, founded and operated by 
       Jakob "Jake" Essig.  We offer technology consulting and one-time services for a wide-spectrum of customer. We're no
       tech power-house like Google or Amazon, but we know people and understand technology is for humans not machines. 
       <br>
       <br> 
       At 5280Free we live and breathe technology, we have seen websites combat sexual violence in India as well as build 
       the software to navigate satellites to helping make technology-literacy available in our community.  We can't wait
-      to see what the future brings, because we will be a part of it.  <button>Learn More About our Services</button>
+      to see what the future brings, because we will be a part of it.  <button routerLink="/services" style="font-size:1.5rem; border-radius: 1rem; margin-top:1rem;">Learn More About our Services</button>
     </p>
   </div>
 </div>
@@ -47,20 +48,20 @@
     <h3 class="text-center" style="margin-bottom: 1rem; font-size: 3rem;">Sample Our Work and Personal Projects</h3>
     <div class="row justify-content-center">
       <div class="card-group">
-        <div class="card text-white bg-success mb-3" style="max-width: 24rem;">
-          <div class="card-header">Github</div>
+        <div class="card text-white bg-success mb-3" style="max-width: 45rem;" id="github">
+          <a href="https://github.com/Jecousa" target="_blank"><div class="card-header"> Github <i class="fab fa-github"></i></div></a>
           <div class="card-body">
             <h5 class="card-title">Coding Samples</h5>
             <p class="card-text">Github is the social network for coders, engineers, and technology enthusiasts.  Checkout some of our public projects.</p>
-            <button>test</button>
+            <button style="font-size:2rem; padding:1.5rem; border-radius: 5px;"><a style="font-size:2rem; padding: 5px;"href="https://github.com/Jecousa" target="_blank">View Github</a></button>
           </div>
         </div>
-        <div class="card text-white bg-success mb-3" style="max-width: 24rem;">
-          <div class="card-header">CodePen</div>
+        <div class="card text-white bg-success mb-3" style="max-width: 45rem;">
+          <a  style="font-size:2rem;" routerLink="https://codepen.io/Jeco/" target="_blank"><div class="card-header">CodePen <i class="fab fa-codepen"></i></div></a>
           <div class="card-body">
             <h5 class="card-title">Web Design Examples</h5>
             <p class="card-text">For most people, the interface is the application.  Frontend, web-design samples of UI/UX available from Codepen.</p>
-            <button>test</button>
+            <button style="font-size:2rem; padding:1.5rem; border-radius: 5px;"><a style="font-size:2rem; padding: 5px;" href="https://codepen.io/Jeco/" target="_blank">View CodePen</a></button>
           </div>
         </div>
       </div>
@@ -69,14 +70,15 @@
 </div>
 <div class="col-md" id="close">
   <div class="row justify-content-center">
-    <p class="text-center col-md-10" style="font-size:1.5rem; padding-bottom: 1.5rem;">
+    <p class="text-center col-md-10 outro" style="padding-bottom: 1.5rem;">
     We want to make technology work for you! If you have questions or concerns our Inboxes are always open. We offer flexible
     options expertise in the industry, if we can't fulfill your requests we will help you find what you are looking for
   </p>
 </div>
     <div class="row justify-content-center">
-      <button style="font-size: 2.5rem; margin-bottom: 2rem;" class="btn btn-primary content-center" routerLink="/order">Free Estimate with
+      <button style="font-size: 3rem; margin-bottom: 5rem; box-shadow: 0 0 1rem darkblue, 0 0 2rem lightblue;" class="btn btn-primary content-center" routerLink="/order">Free Estimate with
         <br> 30 Minute Consultation</button>
     </div>
   </div>
 </div>
+

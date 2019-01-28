@@ -1,35 +1,83 @@
 <div class="col-md " *ngIf="service; else test">
     <div class="row justify-content-center">
-        <h2 style="font-size: 2rem;">{{service.name}}</h2>
+
+        <h2 style="font-size: 4.5rem;">{{service.name}}</h2>
     </div>
     <div class="row justify-content-center" style="margin-bottom:2rem;">
-        <div class="col-md-4">
+        <div class="col-lg-4">
             <img src={{service.image}} alt="" class="serviceImage">
         </div>
-        <div class="col-md-6">
-            <p style="font-size:1.5rem" class="serviceDescription">{{service.description}}</p>
+        <div class="col-lg-6">
+            <p style="font-size: 2rem" class="serviceDescription">{{service.description}}</p>
         </div>
     </div>
+    <br>
+    <hr>
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <p class="text-center">
+            <h3 class="text-center" style="padding-bottom:2rem;">
                 Who Uses These Services?
-            </p>
+            </h3>
         </div>
     </div>
     <div class="row justify-content-center">
-            <div class="col-md-8">
-                <ul>
-                    <li>{{service.user1}}</li>
-                    <li>{{service.user2}}</li>
-                    <li>{{service.user3}}</li>
+        <div class="col-lg">
+            <ul>
+                <li>
+
+                    <div class="row">
+                        <div class="col-lg service">{{service.user1}}</div>
+                        <div class="col-lg user">{{service.detail1}}</div>
+                    </div>
+                </li>
+
+                <li>
+
+                    <div class="row" style="background:lightgray;">
+                        <div class="col-lg service">{{service.user2}}</div>
+                        <div class="col-lg user">{{service.detail2}}</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-lg service">{{service.user3}}</div>
+                        <div class="col-lg user">{{service.detail3}}</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-lg">
+            <h3>Technologies Used:</h3>
+            <br>
+            <div class="row">
+                <ul id="techs">
+                    <li>
+                        <div class="row">
+                            <div class="col-lg ">{{service.tech1}}</div>
+                            <div class="col-lg ">{{service.techpic1}}</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-lg ">{{service.tech2}}</div>
+                            <div class="col-lg ">{{service.techpic2}}</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-lg ">{{service.tech3}}</div>
+                            <div class="col-lg ">{{service.techpic3}}</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
-    <div class="row justify-content-center">
-        <h3>Technologies Used:</h3>
-        <p>{{service.tech}}</p>
     </div>
+
 </div>
 
 
