@@ -48,34 +48,28 @@
         </div>
     </div>
     <br>
+    <hr>
+    <br>
+    <h3 class="text-center" style="font-size:2.5rem;">Technologies Used</h3>
     <br>
     <div class="row justify-content-center">
-            <h3>Technologies Used:</h3>
-            <br>
-            <div class="row" id="techs">
-                <ul id="techs">
-                    <li>
-                        <div class="row">
-                            <div class="col-lg ">{{service.tech1}}</div>
-                            <div class="col-lg ">{{service.techpic1}}</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-lg ">{{service.tech2}}</div>
-                            <div class="col-lg ">{{service.techpic2}}</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-lg ">{{service.tech3}}</div>
-                            <div class="col-lg ">{{service.techpic3}}</div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="col-sm-3 techs">
+                <div class="col-sm techName">{{service.tech1}}</div>
+                <div class="col-sm techImg"><i class={{service.techpic1}}></i></div>
             </div>
-        </div>
+            <div class="col-sm-3 techs">
+                <div class="col-sm techName">{{service.tech2}}</div>
+                <div class="col-sm techImg"><i class={{service.techpic2}}></i></div>
+            </div>
+            <div class="col-sm-3 techs">
+                <div class="col-sm techName">{{service.tech3}}</div>
+                <div class="col-sm techImg"><i class={{service.techpic3}}></i></div>
+            </div>
 
+    </div>
+    <div class="row justify-content-center" style="margin-top:1rem; padding:5rem; font-size: 1.8rem;">
+        <button routerLink="/order">Free Estimate with 30 Minute Consulatation</button>
+    </div>
 </div>
 
 
@@ -86,260 +80,4 @@
     </div>
 </ng-template>
 
-<!--Web Detail-->
-<ng-template #web let-c="close" let-d="dismiss">
-    <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="static-1">
-        <ngb-panel title="Web Services">
-            <ng-template ngbPanelContent>
-                <h3 class="text-center">Web Serivces</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <p class="text-justify">Mobile-responsive, platform agnostic web services.
-                            Engage and connect with your online audience, carve
-                            out your piece of online real estate. Make your mark
-                            on the internet.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
-                            <li>Static Websites and Landing Pages</li>
-                            <li>WordPress Blogs</li>
-                            <li>Social Media Strategy and Integration</li>
-                            <li>Search Engine Optomization (SEO)</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
 
-            </ng-template>
-        </ngb-panel>
-        <ngb-panel title="Apps &amp; Tools">
-            <ng-template ngbPanelContent>
-                <h3 class="text-center">Tools &amp; Apps</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <p class="text-justify ">Sophisticated, complex, powerful applications and tools.
-                            Increase productivity or create a product with tools and applications
-                            tailored specifically to your needs. Full-stack expertise!
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="">
-                            <li>Web Applications</li>
-                            <li>Desktop Applications</li>
-                            <li>Android Native Apps</li>
-                            <li>Productivity Tools</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-            </ng-template>
-        </ngb-panel>
-        <ngb-panel title="DevOps Cloud Automation">
-            <ng-template ngbPanelContent>
-                <h3 class="text-center">DevOps Cloud Automation</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <p class="text-justify">Bring your ideas from the drawing board to development to operations
-                            seemlessly. Automated cloud-based DevOps solutions at every stage of production,
-                            usings cutting edge technology and tools.
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>End to End Build Automation</li>
-                            <li>AWS Integration</li>
-                            <li>Virtual Cloud Computing Infrastructure</li>
-                            <li>Seemless Integration and Deployment</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-            </ng-template>
-        </ngb-panel>
-    </ngb-accordion>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
-    </div>
-</ng-template>
-
-<!--App Detail-->
-<ng-template #apps let-c="close" let-d="dismiss">
-    <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="static-1">
-        <ngb-panel title="Web Services">
-            <ng-template ngbPanelContent>
-                <h3>Web Serivces</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <p>Mobile-responsive, platform agnostic web services.
-                            Engage and connect with your online audience, carve
-                            out your piece of online real estate. Make your mark
-                            on the internet.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
-                            <li>Static Websites and Landing Pages</li>
-                            <li>WordPress Blogs</li>
-                            <li>Social Media Strategy and Integration</li>
-                            <li>Search Engine Optomization (SEO)</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-
-            </ng-template>
-        </ngb-panel>
-        <ngb-panel title="Apps &amp; Tools">
-            <ng-template ngbPanelContent>
-                <h3>Tools &amp; Apps</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <p>Sophisticated, complex, powerful applications and tools.
-                            Increase productivity or create a product with tools and applications
-                            tailored specifically to your needs. Full-stack expertise!
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
-                            <li>Web Applications</li>
-                            <li>Desktop Applications</li>
-                            <li>Android Native Apps</li>
-                            <li>Productivity Tools</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-            </ng-template>
-        </ngb-panel>
-        <ngb-panel title="DevOps Cloud Automation">
-            <ng-template ngbPanelContent>
-                <h3>DevOps Cloud Automation</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <p>Bring your ideas from the drawing board to development to operations
-                            seemlessly. Automated cloud-based DevOps solutions at every stage of production,
-                            usings cutting edge technology and tools.
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>End to End Build Automation</li>
-                            <li>AWS Integration</li>
-                            <li>Virtual Cloud Computing Infrastructure</li>
-                            <li>Seemless Integration and Deployment</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-            </ng-template>
-        </ngb-panel>
-    </ngb-accordion>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
-    </div>
-</ng-template>
-
-<!--DevOps-->
-<ng-template #auto let-c="close" let-d="dismiss">
-    <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="static-1">
-        <ngb-panel title="Web Services">
-            <ng-template ngbPanelContent>
-                <h3>Web Serivces</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <p>Mobile-responsive, platform agnostic web services.
-                            Engage and connect with your online audience, carve
-                            out your piece of online real estate. Make your mark
-                            on the internet.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
-                            <li>Static Websites and Landing Pages</li>
-                            <li>WordPress Blogs</li>
-                            <li>Social Media Strategy and Integration</li>
-                            <li>Search Engine Optomization (SEO)</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-
-            </ng-template>
-        </ngb-panel>
-        <ngb-panel title="Apps &amp; Tools">
-            <ng-template ngbPanelContent>
-                <h3>Tools &amp; Apps</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <p>Sophisticated, complex, powerful applications and tools.
-                            Increase productivity or create a product with tools and applications
-                            tailored specifically to your needs. Full-stack expertise!
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul>
-                            <li>Web Applications</li>
-                            <li>Desktop Applications</li>
-                            <li>Android Native Apps</li>
-                            <li>Productivity Tools</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-            </ng-template>
-        </ngb-panel>
-        <ngb-panel title="DevOps Cloud Automation">
-            <ng-template ngbPanelContent>
-                <h3>DevOps Cloud Automation</h3>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <p>Bring your ideas from the drawing board to development to operations
-                            seemlessly. Automated cloud-based DevOps solutions at every stage of production,
-                            usings cutting edge technology and tools.
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li>End to End Build Automation</li>
-                            <li>AWS Integration</li>
-                            <li>Virtual Cloud Computing Infrastructure</li>
-                            <li>Seemless Integration and Deployment</li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <span class="btn btn-primary" (click)="c('Close click')" routerLink="/order" style="margin:auto; display:block;">Get
-                    A Free Estimate</span>
-            </ng-template>
-        </ngb-panel>
-    </ngb-accordion>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
-    </div>
-</ng-template>

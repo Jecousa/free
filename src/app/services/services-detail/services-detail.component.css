@@ -19,5 +19,14 @@ li{
     list-style:none;
 }
 ul#techs li {
-    display:inline;
+    display:block;
+  }
+  .techName{
+      font-size: 2rem;
+  }
+  i{
+      font-size: 7rem;
+  }
+  .techs{
+      width:100%;
   }

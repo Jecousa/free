@@ -6,13 +6,15 @@
     <h1 class="align-middle">Customized Software Solutions</h1>  
 </div>
 <div class="container-fluid">
-  <div class="row justify-content-center" style="margin-top:3rem;">
-    <div class="service-offerings" id="serviceBody">
-      <app-services-detail [service]="selectedService"></app-services-detail>
-    </div>
+    <h2 class="text-center" style="margin-top:2rem; font-size:3rem;">Learn About Our Services</h2>
+  <div class="row justify-content-center" style="margin-top:1.5rem;">
     <div class="row justify-content-center" id="serviceNav">
         <span style="font-size:1.5rem;"class="btn btn-primary" *ngFor="let service of services" [class.selected]="service === selectedService"
           (click)="onSelect(service)">{{service.name}}</span>
       </div>
+    <div class="service-offerings" id="serviceBody">
+      <app-services-detail [service]="selectedService"></app-services-detail>
+    </div>
+   
   </div>
 </div>
