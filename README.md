@@ -1,3 +1,13 @@
+# About this Project
+
+This is a dead project!  It as an example of why it is important to design mobile-first with responsiveness built in.  Checkout https://www.5280free.com for what this project evolved into or the official repo https://www.github.com/Jecousa/FinallyFree.git 
+
+Looks below for details on the project. 
+
+
+
+
+
 # Freely
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
